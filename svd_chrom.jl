@@ -84,4 +84,4 @@ d=inv(f);
 t=d*(transpose(T)*y);#predict component effects(as SNP effect(b)=V*t and t=V'b)
 g=T*t;#predict individual genetic effects or breeding values
 
-#writedlm("ebv.txt",g,"\t");
+writedlm("ebv.txt",g,"\t")
